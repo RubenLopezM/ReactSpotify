@@ -1,13 +1,127 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
 
-*/
+ol{
+    background-color: #05060a;
+    color: white;   
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background: #1ed760;
+    color: white;
+    border-radius: 999px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.musicplayer{
+    background-color: #05060a;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    border-radius: 4%;
+    margin-top: 1rem;
+    width: 30rem;
+    
+}
+
+h1{
+    color: white;
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.volumebtn{
+    display: flex;
+    flex-direction: row;
+}
+
+body{
+    background: radial-gradient(circle at 116.45% 74.18%, #312c44 0, #292641 50%, #21203e 100%);
+}
+
+.classong{
+    padding-bottom: 0.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    cursor: pointer;
+       
+}
+
+.classong:hover{
+    color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;    
+}
+
+.title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 30px #fff;
+
+}
+
+.namesong{
+    animation: flicker 1.5s infinite alternate;
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+
+.input{
+    margin-bottom: 1rem;
+    -webkit-appearance: none;
+    outline: none;
+    background: #f2f2f2ff;
+    height: 0.2rem;
+}
+
+input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
